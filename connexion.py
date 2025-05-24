@@ -1,4 +1,5 @@
 import streamlit as st
+import subprocess
 import requests
 import json
 
@@ -247,6 +248,9 @@ while True :
     st.session_state["selected_childs"  ] = accessible_childs.copy()
     break
 
+
+if __name__ == "__main__":
+    subprocess.run(["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"])
 
 0*"""
 import numpy as np
