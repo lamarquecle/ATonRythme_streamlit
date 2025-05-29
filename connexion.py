@@ -1,15 +1,13 @@
 import streamlit as st
 import os
 #import subprocess
-#import requests
+import requests
 #import json
 
 st.set_page_config(
     page_title="Multipage App",
     page_icon="👋",
     layout="centered") # "wide : full page"
-
-st.write("connexion.py")
 
 #####################################################################################################
 #####################################################################################################
