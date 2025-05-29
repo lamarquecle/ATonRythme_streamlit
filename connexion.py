@@ -1,13 +1,15 @@
 import streamlit as st
-import subprocess
-import requests
-import json
+#import subprocess
+#import requests
+#import json
 
 st.set_page_config(
     page_title="Multipage App",
     page_icon="👋",
     layout="centered") # "wide : full page"
 
+st.write("connexion.py")
+'''
 #####################################################################################################
 #####################################################################################################
 ##################  DATABASE DU SERVEUR DE L ENTREPRISE  ############################################
@@ -272,3 +274,4 @@ a,b = model.layers[0].get_weights()
 st.write(np.around(a,2))
 st.write(np.around(b,2))
 """
+'''
