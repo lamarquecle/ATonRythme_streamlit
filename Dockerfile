@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r ../streamlit/requirements.txt
 
 COPY . ../streamlit
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD ["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"]
 
