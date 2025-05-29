@@ -12,6 +12,8 @@
 #python-dotenv==1.0.1
 #python-multipart==0.0.20
 streamlit==1.43.2
+google-cloud-aiplatform
+google-cloud-logging
 #streamlit-chat==0.1.0
 #streamlit-authenticator
 #altair<5

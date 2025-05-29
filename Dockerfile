@@ -1,15 +1,13 @@
-FROM python:3.11-slim
-
-WORKDIR /streamlit
-
-COPY requirements.txt ../streamlit
-RUN pip install --no-cache-dir -r ../streamlit/requirements.txt
-
-COPY . ../streamlit
+FROM python:3.11
 
 EXPOSE 8080
+WORKDIR /streamlit
 
-CMD ["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"]
+COPY . ./
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["streamlit", "run", "connexion.py", "--server.port=8080", "--server.address=0.0.0.0"]
 
 
 
