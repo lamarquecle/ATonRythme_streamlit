@@ -249,8 +249,8 @@ while True :
     break
 
 
-if __name__ == "__main__":
-    subprocess.run(["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"])
+#if __name__ == "__main__":
+#    subprocess.run(["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"])
 
 0*"""
 import numpy as np
