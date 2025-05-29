@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 #import subprocess
 #import requests
 #import json
@@ -9,7 +10,7 @@ st.set_page_config(
     layout="centered") # "wide : full page"
 
 st.write("connexion.py")
-'''
+
 #####################################################################################################
 #####################################################################################################
 ##################  DATABASE DU SERVEUR DE L ENTREPRISE  ############################################
@@ -114,8 +115,9 @@ with open('style.css') as file :
     st.markdown(f'<style>{file.read()}</style>', unsafe_allow_html=True)
 
 
+import os
 
-API_URL='http://fastapi:8502'
+API_URL = os.getenv("API_URL")
 
 
 #############################
@@ -274,4 +276,3 @@ a,b = model.layers[0].get_weights()
 st.write(np.around(a,2))
 st.write(np.around(b,2))
 """
-'''

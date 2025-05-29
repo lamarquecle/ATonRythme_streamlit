@@ -4,6 +4,7 @@ EXPOSE 8080
 WORKDIR /streamlit
 
 COPY . ./
+ENV API_URL="https://atonrythme-fastapi-800884171084.europe-west1.run.app"
 
 RUN pip install -r requirements.txt
 
