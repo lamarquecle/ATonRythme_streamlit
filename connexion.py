@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-#import subprocess
 import requests
 import json
 
@@ -113,7 +112,6 @@ with open('style.css') as file :
     st.markdown(f'<style>{file.read()}</style>', unsafe_allow_html=True)
 
 
-import os
 
 API_URL = os.getenv("API_URL")
 
@@ -250,9 +248,6 @@ while True :
     st.session_state["selected_childs"  ] = accessible_childs.copy()
     break
 
-
-#if __name__ == "__main__":
-#    subprocess.run(["streamlit", "run", "connexion.py", "--browser.gatherUsageStats", "False", "--server.address", "0.0.0.0"])
 
 0*"""
 import numpy as np
