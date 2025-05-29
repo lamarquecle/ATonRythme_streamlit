@@ -2,7 +2,7 @@ import streamlit as st
 import os
 #import subprocess
 import requests
-#import json
+import json
 
 st.set_page_config(
     page_title="Multipage App",
