@@ -1,6 +1,6 @@
 import numpy as np
 import streamlit as st
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 def numerizer(X_connaissances_actuelles, france_connaissances_connues):
     connaissances_Numerise = [[int(i in connaissances_actuelles) for i in france_connaissances_connues] \
