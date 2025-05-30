@@ -30,7 +30,7 @@ uvicorn==0.34.0
 #pandas==2.2.3
 #tap2junit==0.1.6 # for test_anything_protocols
 
-tensorflow==2.11.0
+tensorflow==2.12.0
 
 
 
