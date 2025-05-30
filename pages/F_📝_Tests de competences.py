@@ -261,7 +261,7 @@ elif "teacher" in st.session_state["identification"]["actual_role"] :
                 # Vérifier la réponse
                 if response.status_code == 200:
                     st.write("Requête de mise à jour réussie !")
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.write("Échec de la requête :", response.status_code)
 
@@ -273,7 +273,7 @@ elif "teacher" in st.session_state["identification"]["actual_role"] :
         # Vérifier la réponse
         if response.status_code == 200:
             #st.session_state['evaluation_select_id'] = None
-            st.experimental_rerun()
+            st.rerun()
             st.write("Requête réussie !")
         else:
             st.write("Échec de la requête :", response.status_code)
@@ -378,7 +378,7 @@ elif "teacher" in st.session_state["identification"]["actual_role"] :
                         response = requests.post(url, json=evaluation, headers=headers)
                         if response.status_code == 200:
                             st.success('Skills are saves !', icon="✅")
-                            #st.experimental_rerun()
+                            #st.rerun()
                         else:
                             st.error("Échec de sauvegarde des compétences élèves sur l'évaluation sélectionné dans la DB")
 
